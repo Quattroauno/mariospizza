@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f7f4;
+    color: #2c2c2c;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.hero {
+    background-image: url("images/hero-pizza.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+}
+
+.menu li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu span {
+    font-weight: 600;
+}
+
+.gallery .images {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 280px;
+    border-radius: 12px;
+}
+
+.location iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 📱 MOBILE FRIENDLY */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .menu li {
+        font-size: 16px;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
